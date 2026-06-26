@@ -4,7 +4,7 @@ import { WrappedMetrics } from "@/lib/metrics";
 import type { Metadata } from "next";
 
 interface Props {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
 interface ShareData {
@@ -28,7 +28,8 @@ async function getShareData(slug: string): Promise<ShareData | null> {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const data = await getShareData(params.slug);
+  const { slug } = await params;
+  const data = await getShareData(slug);
   if (!data) return { title: "GitHub Wrapped" };
 
   const topLang = data.data.topLanguages[0]?.name ?? "TypeScript";
@@ -50,7 +51,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function SharePage({ params }: Props) {
-  const data = await getShareData(params.slug);
+  const { slug } = await params;
+  const data = await getShareData(slug);
   if (!data) notFound();
 
   return (
