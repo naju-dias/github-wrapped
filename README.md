@@ -13,8 +13,12 @@ Descubra seu ano em código. Commits, linguagens, horários e sua personalidade 
 * **Social Preview Dinâmico:** Desenvolvi uma rota no Edge Runtime (`@vercel/og`) que gera imagens de preview customizadas em tempo real com os dados do usuário para compartilhamento no WhatsApp/Twitter.
 * **UX Fluida:** Interface construída com **Next.js 15 (App Router)**, animações baseadas em arcade utilizando **Framer Motion** e suporte a compartilhamento nativo via Web Share API.
 
+---
+
 ## 🛠️ Tecnologias Principais
 `Next.js 15` • `TypeScript` • `PostgreSQL` • `Prisma ORM` • `NextAuth v5` • `Framer Motion` • `Jest` • `Tailwind CSS`
+
+---
 
 ## 🚀 Como Executar Localmente
 
@@ -36,6 +40,7 @@ npm run db:generate
 npm run dev
 ```
 
+---
 
 ## 🧪 Testes
 
@@ -45,8 +50,12 @@ Os testes unitários cobrem toda a engine de cálculo de métricas (src/lib/metr
 npm test
 ```
 
+---
+
 ## 📡 API do Projeto
 A aplicação conta com uma API RESTful totalmente documentada utilizando **Swagger UI**. Você pode explorar e testar os endpoints interativamente acessando [/api/docs](https://git-wrap-huzi.vercel.app/api/docs) em produção.
+
+---
 
 ## 📁 Estrutura do projeto
 
