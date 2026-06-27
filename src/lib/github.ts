@@ -101,7 +101,7 @@ export async function fetchUserEvents(
   username: string,
   accessToken: string
 ): Promise<GitHubEvent[]> {
-  // O GitHub retorna apenas os eventos dos últimos 90 dias por meio deste endpoint
+  // GitHub returns only events from the last 90 days via this endpoint.
   return githubFetchAll<GitHubEvent>(
     `/users/${username}/events`,
     accessToken
