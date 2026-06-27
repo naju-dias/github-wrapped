@@ -4,6 +4,8 @@ Descubra seu ano em código. Commits, linguagens, horários e sua personalidade 
 
 💻 **Acesse o projeto vivo:** [git-wrap-huzi.vercel.app](https://git-wrap-huzi.vercel.app)
 
+---
+
 ## ✨ Funcionalidades
 
 * **Engine de Métricas Testada:** Toda a lógica que calcula commits, horários de pico, streaks, estrelas e personalidade de dev foi isolada e coberta por testes unitários com **Jest**.
